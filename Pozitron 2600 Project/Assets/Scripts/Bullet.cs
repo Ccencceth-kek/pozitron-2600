@@ -10,10 +10,4 @@ public class Bullet : MonoBehaviour
     {
         transform.position += Vector3.up * speed * Time.deltaTime;
     }
-
-    private void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Debug.Log(hitInfo.name);
-        Destroy(gameObject);
-    }
 }
