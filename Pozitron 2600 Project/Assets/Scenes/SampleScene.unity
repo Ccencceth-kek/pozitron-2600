@@ -239,7 +239,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.62
 --- !u!4 &575114377
 Transform:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56062c0d6ec5f3e4eab77caef5da6ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockType: 2
+  rockType: 0
   maxRotSpeed: 100
   minRotSpeed: 50
 --- !u!1 &581717757
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 778663669}
   - component: {fileID: 778663670}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: RockSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -420,8 +420,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
-  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 89484c9d6473faa4fae21f71d915f89b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
