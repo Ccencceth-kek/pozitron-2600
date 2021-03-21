@@ -6,8 +6,17 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 20.0f;
 
-    void Update()
+    private Rigidbody2D rb;
+
+    void Awake()
     {
-        transform.position += Vector3.up * speed * Time.deltaTime;
+        rb = GetComponent<Rigidbody2D>();
+        rb.AddForce(new Vector2(0.0f, speed));
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        Destroy(gameObject);
     }
 }
